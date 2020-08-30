@@ -3,6 +3,7 @@ body,html{
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -21,6 +22,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;  
+    overflow: hidden;
 }
 
 .title{
@@ -40,7 +42,14 @@ a:hover{
     /* color: #FFC12C;
     text-shadow: 1px 1px 2px #FFCE58;    */
 }
-img{
+#top{
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+}
+#bottom{
     position: absolute;
     bottom: 0;
     right: 0;
